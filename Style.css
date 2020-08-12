@@ -14,6 +14,7 @@
 }
 
 #navbar{
+  position: fixed;
   padding: 0 100px;
   width: 100%;
   height: 80px;
@@ -194,6 +195,8 @@ h2{
   height: 100vh;
   text-align: center;
   background-color: black;
+  
+
 }
 
 #Projects h1{
@@ -218,3 +221,86 @@ h2{
   border: 1px solid red;
 }
 
+/*  Contact Section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  padding: 0 2rem;
+  background: black;
+}
+
+.contact-section-header > h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: white;
+  
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  
+  
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.5s ease;
+  text-decoration: none;
+  padding-right: 40px;
+  color: white;
+
+}
+
+.contact-details:hover {
+  transform: translateY(9px);
+}
+
+/* Footer */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+  border-top: 4px solid red;
+  height:4vh ;
+  margin-bottom: 1px;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 992px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
