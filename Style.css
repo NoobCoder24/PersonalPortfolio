@@ -140,15 +140,17 @@ h2{
   margin: 0 auto;
   padding: 110px 120px;
   background-color: black;
+  height:100vh;
 }
 
 .about-section .col-left{
   width: 250px;
-  height: 220px;
+  height: 50px;
 }
 
 .about-section .col-right{
   width: 100%;  
+  padding-top: 50px;
 }
 
 
@@ -189,7 +191,30 @@ h2{
 /*---Project Section---*/
 
 #Projects{
-  height: auto;
+  height: 100vh;
   text-align: center;
+  background-color: black;
+}
+
+#Projects h1{
+  color:white;
+  padding-top: 30px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  margin-bottom: 20px;
+        
+}
+
+.columns{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  border: 1px solid red;
 }
 
