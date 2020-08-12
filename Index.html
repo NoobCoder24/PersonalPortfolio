@@ -6,10 +6,14 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+         $('.toggle').click(function(){
+             $('ul').toggleClass('active');
+         })
+    })
+    </script>
     
 </head>
 <body>
@@ -25,25 +29,58 @@
                 </nav> 
             </div> 
             <section id="welcome-section">
-                <div >
-                    <h1>Welcome !!</h1>
-                    <p>My Name is Atul Pal</p>
-                    <p>Software Developer</p>
+                <div>
+                    <h1>Hello,My Name is Atul</h1>
+                    <h2>Software Developer</h2>
                 </div>
             </section>
             <section id="About">
-            
+            <div class="about-section">
+                <div class="col-left">
+                    <div class="about-img">
+                        <img src="" alt="img">
+                    </div>
+                </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>me</span></h1>
+                <h2>Software Developer</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat sed, illo, incidunt pariatur nobis nam culpa animi itaque, 
+                    quaerat modi velit consequuntur odit quisquam maiores commodi doloremque? 
+                    Corrupti, exercitationem aspernatur?Dolorum adipisci, ut consequatur praesentium 
+                    totam explicabo facere earum cum quas maxime aut, iure est repellendus, repudiandae amet 
+                    commodi maiores? Dolores magnam illo sed sint consequuntur reiciendis necessitatibus sequi nisi!</p>
+                    <a href="#"class="cta">Download Resume</a>
+            </div>
+            </div>
             </section>
             <section id="Projects">
+                <h1>Projects</h1>
                 <div class="project-title">
+                    <div class="row">
+                        <div class="columns">
+                            1
+                        </div>
+                        <div class="columns">
+                            2
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="columns">
+                            3
+                        </div>
+                        <div class="columns">
+                            4
+                        </div>
+                    </div>
                     <p>Projects</p>
 
                 </div>
             </section>
             <section id="contact">
-                
-                <p>Contacts</p>
-
+                <div class="contact-section">
+                    <p>Contacts</p>
+                </div>
             </section>
 </body>
 </html>

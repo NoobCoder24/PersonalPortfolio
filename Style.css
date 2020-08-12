@@ -7,8 +7,8 @@
 .NavbarClass{
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: black;
+  height: 1vh;
+  /* background-color: black; */
   background-position: center center;
 
 }
@@ -45,6 +45,7 @@
   text-decoration: none;
   font-weight: bold;
   transition: .5s;
+  color: white;
 }
 
 #navbar ul li a:hover{
@@ -53,7 +54,7 @@
 }
 
 .toggle{
-  display: block;
+  display: none;
   position: absolute;
   right: 10px;
   top: 25px;
@@ -65,8 +66,12 @@
 
 @media (max-width:992px)
 {
+  
+  .toggle{
+    display: block;
+  }
   #navbar{
-    padding: 50px 0 190px 0;                      /*background white when screen size is smaller*/
+    padding: 50px 0 150px 0;                      /*background white when screen size is smaller*/
     background:rgb(250, 246, 246,.9);
     transition: .5s ease-in-out;
   } 
@@ -90,3 +95,101 @@
   }
 
 }
+
+/*--------Welcome Section-------------*/
+
+#welcome-section{
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 40px; */
+  background-color: black;
+  margin-top: auto; 
+}
+
+h1{
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding:0 0 10px 0;
+}
+
+h2{
+  font-weight: 200;
+  text-align: center;
+  font-size: 30px;
+  color: lightskyblue;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+
+
+/*----About Section-----*/
+
+.about-section{
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 120px;
+  background-color: black;
+}
+
+.about-section .col-left{
+  width: 250px;
+  height: 220px;
+}
+
+.about-section .col-right{
+  width: 100%;  
+}
+
+
+.about-section .col-right h2{
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  margin-bottom: 10px;
+}
+
+.about-section .col-right p{
+  margin-bottom:20px ;
+  color: white;
+  font-style: italic;
+}
+
+.about-section .col-right .cta{
+  color: rgb(212, 13, 13);
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+.about-section .col-left .about-img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+
+.about-section .col-left .about-img::after{
+  content: "";
+  position: absolute;
+
+}
+
+
+/*---Project Section---*/
+
+#Projects{
+  height: auto;
+  text-align: center;
+}
+
