@@ -1,0 +1,15 @@
+#navbar {
+    height: 15vh;
+    background-color: #ffff80;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-weight: 700;
+  }
+
+.welcome-section {
+    background-color: #b3b300;
+    height: 85vh;
+    padding-top: 50px;
+    margin-top:15vh;
+  }
